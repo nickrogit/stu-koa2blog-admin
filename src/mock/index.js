@@ -5,8 +5,8 @@ import users from './users'
 import usersbirthday from './usersbirthday'
 
 // 登录，菜单，改密
-app(Mock, qs)
+// app(Mock, qs)
 // 用户管理
-users(Mock, qs)
+// users(Mock, qs)
 // 用户生日管理
- usersbirthday(Mock, qs)
+ // usersbirthday(Mock, qs)

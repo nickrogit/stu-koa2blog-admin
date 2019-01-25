@@ -8,7 +8,7 @@ export default(Mock, qs) => {
         msg: 'login success',
         data: {
           user_id: 1,
-          real_name: 'Admin'
+          name: 'Admin'
         }
       }
     }

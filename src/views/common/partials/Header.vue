@@ -57,7 +57,7 @@ export default {
   mounted() {
     // 获取用户信息
     const user = JSON.parse(localStorage.getItem('userK'))
-    this.userName = user.real_name || 'Null'
+    this.userName = user.name || 'Null'
   },
   methods: {
     // 下拉菜单项

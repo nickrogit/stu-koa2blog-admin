@@ -1,8 +1,8 @@
 {
-  "name": "vue-admin-block",
+  "name": "adminPro",
   "version": "1.0.0",
-  "description": "A Vue.js admin project.",
-  "author": "nickro <nickro@qq.com>",
+  "description": "adminPro by vue",
+  "author": "nickro",
   "license": "MIT",
   "private": true,
   "scripts": {
