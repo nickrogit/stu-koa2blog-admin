@@ -14,6 +14,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^11.2.0",
+    "@ckeditor/ckeditor5-vue": "^1.0.0-beta.1",
     "axios": "^0.17.1",
     "dayjs": "^1.8.0",
     "echarts": "^3.8.5",

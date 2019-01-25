@@ -40,7 +40,8 @@
             </Upload>
           </FormItem>
           <FormItem label="详情" prop="detail">
-            <Input v-model="detailData.detail" type="textarea" :rows="8" placeholder="请输入详情" style="width: 800px"></Input>
+            <!--<Input v-model="detailData.detail" type="textarea" :rows="8" placeholder="请输入详情" style="width: 800px"></Input>-->
+            <ckeditor :editor="editor" v-model="detailData.detail" :config="editorConfig"></ckeditor>
           </FormItem>
           <FormItem label="">
             <Button type="primary" :loading="loading.btn" long @click="submitArticle('detailForm')" size="large" style="width: 180px;">提交</Button>
@@ -55,6 +56,7 @@
 <script>
   import config from '@/config'
   import dayjs from 'dayjs'
+  import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
   import {getTagsList, getArticleDetail, updateArticle} from '@/services/api'
 
 export default {
@@ -67,6 +69,17 @@ export default {
         headers: {},
         uploadUrl: config.baseURL + '/uploadFile',
         fileLoading: false
+      },
+      editor: ClassicEditor,
+      editorConfig: {
+        // toolbar: [ 'bold', 'italic' ],
+        language: 'zh',
+        ckfinder: {
+          uploadUrl: config.baseURL + '/uploadFile' // 后端处理上传逻辑返回json数据,包括uploaded(选项true/false)和url两个字段,
+        },
+        image: {
+          styles: ['full', 'side']
+        }
       },
       tagsOption: [],
       title: '添加文章',
