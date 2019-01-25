@@ -38,7 +38,7 @@
 ### 技术栈
 
 -   Axios @0.x
--   iView @2.x
+-   iView @3.x
 -   Mockjs @1.x
 -   Vue @2.5.x
 -   Vue-Router @3.x
